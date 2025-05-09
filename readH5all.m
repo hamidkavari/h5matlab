@@ -15,7 +15,7 @@ function  readH5all(filename)
     end
 
        clear data dsetName fullPath_variable fullPath_dataset i k nameData  varName
-       output_filename= [filename , '.mat']
+       output_filename= char([filename , '.mat'])
        save(output_filename,'-v7.3')
        disp(['100% done; The file ' filename  ' is completely read and the output is saved in the file ' output_filename])
 
